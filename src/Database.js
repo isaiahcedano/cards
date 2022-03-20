@@ -3,7 +3,7 @@ import SuperExpressive from 'super-expressive'
 
 export const generateId = () => {
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    
+
     const regexID = SuperExpressive()
                         .char("*")
                         .char("*")
@@ -21,7 +21,7 @@ export const generateId = () => {
                         .word
                         .word
                         .word
-                        .toRegex()                
+                        .toRegex()
     let randomLetters = [
         characters.charAt(Math.floor(Math.random() * characters.length)),
         characters.charAt(Math.floor(Math.random() * characters.length)),
@@ -58,27 +58,9 @@ export const Database =
         "Isaiah Cedano****wWds5129vGOf":
             {
                 age:31,
-                email:"isaiahcedano123@gmail.com",
+                email:"example@gmail.com",
                 id:generateId()[2],
             },
-        "Alexandro Cedano****INmP1155oFUL":
-            {
-                age:34,
-                email:"alexandrocedano123@gmail.com",
-                id:generateId()[2],
-            },
-        "Jazmin Hans****kMLM2991mIfm":
-            {
-                age:43,
-                email:"jazminhans@yahoo.com",
-                id:generateId()[2],
-            },
-        "Chinin****vpSe7943SjmT":
-            {
-                age:17,
-                email:"rocadurapolladura@gmail.com",
-                id:generateId()[2],
-            }
     }
 
 export const addUser = (user, userData) => {
